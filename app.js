@@ -1,72 +1,95 @@
-alert("Salut !");
 
-[
+
+let motos = [
     {
-        "nom": Ducati,
-        "prix": 28000,
-        "catégorie": hypersport,
-        "image": ""
+        "id": 1,
+        "nom": "Ducati Panigale V4S",
+        "prix": 27299,
+        "categorie": "hypersport",
+        "image": "images/panigale.jpg"
     },
     {
-        "nom": ,
-        "prix": ,
-        "catégorie": ,
-        "image": 
+        "id": 2,
+        "nom": "Honda CBR-R 1000R SP",
+        "prix": 26999,
+        "categorie": "hypersport",
+        "image": "images/cbr.jpg"
     },
     {
-        "nom": ,
-        "prix": ,
-        "catégorie": ,
-        "image": 
+        "id": 3,
+        "nom": "Yamaha R1 M",
+        "prix": 22995,
+        "categorie": "hypersport",
+        "image": "images/r1.jpg"
     },
     {
-        "nom": ,
-        "prix": ,
-        "catégorie": ,
-        "image": 
+        "id": 4,
+        "nom": "Ducati Streetfighter V4",
+        "prix": 19990,
+        "categorie": "roadster",
+        "image": "images/streetfighter.jpg"
     },
     {
-        "nom": ,
-        "prix": ,
-        "catégorie": ,
-        "image": 
+        "id": 5,
+        "nom": "Honda Hornet",
+        "prix": "inconnu",
+        "categorie": "roadster",
+        "image": "images/hornet.jpg"
     },
     {
-        "nom": ,
-        "prix": ,
-        "catégorie": ,
-        "image": 
+        "id": 6,
+        "nom": "Yamaha MT10 SP",
+        "prix": 18099,
+        "categorie": "roadster",
+        "image": "images/mt10.jpg"
     },
 ]
 
-const ducati = moto [0];
+/*const panigale = motos [0];
 const imageElement = document.createElement ("img");
-imageElement.src = ducati.image;
+imageElement.src = panigale.image;
 const nomElement = document.createElement ("h3");
-nomElement.innerText = ducati.nom;
+nomElement.innerText = panigale.nom;
 const prixElement = document.createElement ("p");
-prixElement.src = ducati.prix;
+prixElement.innerText = "prix: " + panigale.prix + "€";
 const categorieElement = document.createElement ("p");
-categorieElement.src = ducati.categorie;
+categorieElement.innerText = panigale.categorie;
 
 const sectionFiches = document.querySelector (".fiches");
 sectionFiches.appendChild (imageElement);
 sectionFiches.appendChild (nomElement);
 sectionFiches.appendChild (prixElement);
-sectionFiches.appendChild (categorieElement);
+sectionFiches.appendChild (categorieElement);*/
 
 
-
-/*for (let i = 0; i < toutesLesMotos.length, i ++) {
+for (let i = 0; i < motos.length; i++) {
     const sectionFiches = document.querySelector (".fiches");
 
-    const moto = document.querySelector ("article");
+    const modeleElement = document.createElement ("article");
 
-    const photoMoto = document.querySelector ("img");
+    const imageElement = document.createElement ("img");
 
-    imageMoto.src = toutesLesMotos [i].image;
+    imageElement.src = motos[i].image;
 
-    moto.appendChild (imageMoto);
+    modeleElement.appendChild (imageElement);
 
-    document.body.appendChild (moto);
-}*/
+    const nomElement = document.createElement ("h3");
+
+    nomElement.innerText = motos[i].nom;
+
+    modeleElement.appendChild (nomElement);
+
+    const prixElement = document.createElement ("p");
+
+    prixElement.innerText = motos[i].prix;
+
+    modeleElement.appendChild (prixElement);
+
+    const categorieElement = document.createElement ("p");
+
+    categorieElement.innerText = motos[i].categorie;
+
+    modeleElement.appendChild (categorieElement);
+
+    document.body.appendChild (modeleElement);
+}

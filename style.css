@@ -39,7 +39,7 @@ main {
     margin-bottom: 100px;
 }
 
-.fiches {
+/*.fiches {
 	flex: 1;
 }
 
@@ -50,7 +50,7 @@ main {
 .fiches p {
 	margin-top: 4px;
 	margin-bottom: 4px;
-}
+}*/
 
 footer {
     width: 100%;
