@@ -84,7 +84,7 @@ for (let i = 0; i < motos.length; i++) {
 
     const prixElement = document.createElement ("p");
 
-    prixElement.innerText = motos[i].prix;
+    prixElement.innerText = motos[i].prix + " €";
 
     modeleElement.appendChild (prixElement);
 
