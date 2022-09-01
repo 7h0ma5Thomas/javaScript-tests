@@ -3,14 +3,14 @@
 let motos = [
     {
         "id": 1,
-        "nom": "Ducati Panigale V4S",
-        "prix": 27299,
+        "nom": "Ducati Panigale V4R",
+        "prix": 39900,
         "categorie": "hypersport",
         "image": "images/panigale.jpg"
     },
     {
         "id": 2,
-        "nom": "Honda CBR-R 1000R SP",
+        "nom": "Honda CBR-RR 1000R SP",
         "prix": 26999,
         "categorie": "hypersport",
         "image": "images/cbr.jpg"
@@ -91,5 +91,5 @@ for (let i = 0; i < motos.length; i++) {
 
     modeleElement.appendChild (categorieElement);
 
-    document.body.appendChild (modeleElement);
+    sectionFiches.appendChild(modeleElement);
 }
