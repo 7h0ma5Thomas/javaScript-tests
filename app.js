@@ -1,4 +1,4 @@
-
+//Tableau contenant les éléments
 
 let motos = [
     {
@@ -45,6 +45,8 @@ let motos = [
     },
 ]
 
+//Création d'une fiche
+
 /*const panigale = motos [0];
 const imageElement = document.createElement ("img");
 imageElement.src = panigale.image;
@@ -61,6 +63,7 @@ sectionFiches.appendChild (nomElement);
 sectionFiches.appendChild (prixElement);
 sectionFiches.appendChild (categorieElement);*/
 
+//Création de toues les fiches
 
 for (let i = 0; i < motos.length; i++) {
     const sectionFiches = document.querySelector (".fiches");

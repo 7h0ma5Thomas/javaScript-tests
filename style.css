@@ -64,6 +64,7 @@ article {
     height: 330px;
     overflow: hidden;
     border: solid white 4px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
